@@ -32,13 +32,13 @@ p{
     
 }
 
-.header_imagen{
+.header_imagen {
     width: 100px;
     margin-bottom: 3rem;
 }
 
 
- .header_titulo{
+ .header_titulo {
      margin: 0;
      font-size: 24px;
      color: #03264C;;
@@ -52,7 +52,7 @@ p{
     margin: 2rem auto;
 }
 
-.main_descripcion{
+.main_texto {
     color:#666;
     font-size: 24px;
 }
