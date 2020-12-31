@@ -9,6 +9,10 @@ app.get('/contacto', function (req, res){
     res.sendFile(__dirname + '/views/contacto.html')
 })
 
+app.get('/register', function (req, res){
+    res.sendFile(__dirname + '/views/register.html')
+})
+
 app.get('*', function (req, res){
     res.sendFile(__dirname + '/public/' + req.url)
 })
