@@ -1,0 +1,52 @@
+*{
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    
+   
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+p{
+    font-size: 12px;
+    color:#666;
+}
+
+.encabezado-index{
+    background-color: #EAC926;
+    width: 776px;
+}
+
+.mercado-liebre-logo{
+    width: 762px;
+    margin-bottom: 3rem;
+}
+
+.banner-nav{
+    width:775px;
+}
+
+h2{
+    color:#666;
+    font-size: 52px;
+}
+
+.h2-div-visitas{
+    background-color: lightgrey;
+    width: 776px;
+}
+
+.h2-div-ofertas{
+    background-color: lightgrey;
+    width: 776px;
+}

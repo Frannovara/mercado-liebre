@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MercadoLiebre - Franco Novara</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
+
+    <!-- Encabezado -->
+    <div class="encabezado-index">
     <header class="header">
-
-        <!-- Encabezado -->
-
-        <img src = "/images/logo-mercado-liebre.svg", alt = "logo de Mercado Liebre">
+        <img class = "mercado-liebre-logo" src = "/images/logo-mercado-liebre.svg", alt = "logo de Mercado Liebre">
         <input type="search" name="buscador" placeholder="Buscar productos, marcas y más.">
-        <input type="submit" value="B"> <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <input type="submit" value="B">
+        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
     </header>
     <nav>
 
         <!-- Barra de navegación -->
-
         <ul>
             <li><a href="/ofertas">Ofertas</a></li>
             <li><a href="/tiendas-oficiales">Tiendas Oficiales</a></li>
@@ -26,16 +27,17 @@
             <li><a href="/ayuda"> Ayuda</a></li>
         </ul>
         <ul>
-            <li>Creá tu cuenta</li>
-            <li>Ingresá</li>
-            <li>Mis compras</li>
+            <li><a href="/register">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+            <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+            <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
         </ul>
     </nav>
-    <img src="/images/img-home-banner.jpg" alt="banner de ofertas">
+</div>
+    <img class = "banner-nav" src="/images/img-home-banner.jpg" alt="banner de ofertas">
 
     <!-- Productos -->
 
-    <h2>Basado en tu última visita</h2>
+    <div class = "h2-div-visitas"><h2>Basado en tu última visita</h2></div>
     <main class="main">
     <div>
         <img src="/images/img-cafetera-moulinex.jpg" alt="Foto cafetera moulinex">
@@ -62,7 +64,7 @@
         <h3>SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</h3>
     </div>
     
-    <h2>Ofertas</h2>
+    <div class = "h2-div-ofertas"><h2>Ofertas</h2></div>
     <div>
         <img src="/images/img-cafetera-moulinex.jpg" alt="Foto cafetera moulinex">
         <p>$6.770 <br>
