@@ -36,19 +36,76 @@
 
 <br>
 
+<main class="register-main">
+    <form action="index.html" class="register" method="GET">
+        
+        <input class="register-input"  id="nameLastname" type="text" name="nameLast" placeholder="Nombre y Apellido" />
+        <br>
+        <input class="register-input"   id="userName" type="text" name="user" placeholder="Nombre de usuario" />
+        <br>
+        <input class="register-input"   type="email" name="email" id="email" placeholder="E-mail"/>
+        <div>
+            <label for="date">Fecha de Nacimiento</label>
+        </div>
+        <input class="register-input"   type="date" name="date" id="email"  />
+        <br>
+        <input placeholder="Domicilio" class="register-input"  type="text" name="adress" id="adress" />
+        
 
+        <h3>Perfil del usuario</h3>
+
+        <div class="register-main-div">
+            <div class="register-main-div-user" ><input type="radio" value="buyer" name="userProfile" id="userProfile" /><label>Comprador</label></div>
+        <div class="register-main-div-user">	<input type="radio" value="seller" name="userProfile" id="userProfile" /><label>Vendedor</labe></div>
+        </div>
+        
+
+        <h3>Intereses</h3>
+
+        <section class="user-preferencias">
+            <div><input type="checkbox" value="electro" name="preferences" id="" /><label>Electro</label></div>
+            <div><input type="checkbox" value="moda" name="preferences" id="" /><label>Moda</label></div>
+            <div><input type="checkbox" value="hogar" name="preferences" id="" /><label>Hogar</label></div>
+            <div><input type="checkbox" value="juguetería" name="preferences" id="" /><label>Juguetería</label></div>
+            <div><input type="checkbox" value="vida sana" name="preferences" id="" /><label>Vida Sana</label></div>
+        </section>
+
+        <h3>Elegí tu foto de usuario</h3>
+
+        <input class="register-input"   type="file" name="userPhoto" id="userPhoto" />
+        <br>
+        <br>
+        <input class="register-input"   type="password" name="password" placeholder="Elegí tu contraseña" />
+        <br>
+        <input class="register-input"   type="password" name="password" placeholder="Confirmá tu contraseña" />
+        <br>
+        <br>
+
+        <button class="register-enviar"  type="submit">Enviar</button>
+        <button class="register-borrar" type="reset">Borrar</button>
+    </form>
+</main>
 
 <!-- Footer -->
 
 <footer class="footer">
+    <br>
+    <i class="fas fa-credit-card"></i>
+    <br>
     <div><h3>Pagá con tarjeta o en efectivo</h3>
         Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
         pago. ¡Y siempre es seguro!
     </div>
+    <br>
+    <i class="fas fa-gift"></i>
+    <br>
     <div><h3>Envío gratis desde los $ 2.500</h3>
         Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
         productos. Es un beneficio de MercadoPuntos.
     </div>
+    <br>
+    <i class="fas fa-user-shield"></i>
+    <br>
     <div>
         <h3>Seguridad, de principio a fin</h3>
         ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
