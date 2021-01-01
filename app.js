@@ -13,6 +13,10 @@ app.get('/register', function (req, res){
     res.sendFile(__dirname + '/views/register.html')
 })
 
+app.get('/login', function (req, res){
+    res.sendFile(__dirname + '/views/login.html')
+})
+
 app.get('*', function (req, res){
     res.sendFile(__dirname + '/public/' + req.url)
 })
