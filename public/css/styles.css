@@ -29,6 +29,8 @@ i {
     background-color: #EAC926;
     justify-content: space-around;
 	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .mercado-liebre-logo{
@@ -36,7 +38,7 @@ i {
 }
 
 .header-div-busqueda{
-    position : relative;
+	position : relative;
 }
 
 .barra-busqueda{
@@ -73,7 +75,22 @@ i {
     display: block;
 }
 
-    /* Main */
+.icono-busqueda{
+	color: #353232;
+	font-size: 15px;
+	position: absolute;
+	right: 146px;
+	top: 22px;
+}
+
+.descripcion-header{
+	flex-basis: 100%;
+	text-align: left;
+}
+
+
+	/* Main */
+	
 img{
     width: 100%;
 }
@@ -100,8 +117,20 @@ h4 {
 }
 
 .contenedor-detalles-producto{
-    margin: 16px;
-    padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid #ebebeb;
+	padding: 1rem;
+	position: relative;
+}
+
+.contenedor-detalles-producto > p {
+	padding: 0.5rem;
+}
+
+.contenedor-detalles-producto > h4 {
+	width: 100%;
+	padding: 0.5rem;
 }
 
 .title-visita {
@@ -122,6 +151,30 @@ h4 {
 	cursor: pointer;
 }
 
+.ultima-visita{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ofertas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.icono-truck{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	border: 1px solid #ebebeb;
+	padding: 2px;
+	background-color: white;
+}
 
     /* Footer */
 
@@ -142,15 +195,10 @@ h4 {
 
 .login-input{
     padding: 10px;
-
 	border: 0;
-
 	width: 100%;
-
 	margin: 20px 0;
-
 	box-sizing: border-box;
-
 	border-radius: 5px;
 }
 
@@ -176,15 +224,10 @@ h4 {
 
 .register-input{
     padding: 10px;
-
 	border: 0;
-
 	width: 100%;
-
 	margin: 20px 0;
-
 	box-sizing: border-box;
-
 	border-radius: 5px;
 }
 
@@ -211,3 +254,29 @@ h4 {
 .registrer-borrar:hover {
 	background-color: #cc1155;
 }
+
+.register-main-div{
+	display: flex;
+	margin: 20px 0;
+}
+
+.register-main-div-user{
+	margin-left: 20px;
+}
+
+.preferencias{
+	margin: 10px 0 10px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.preferencias > div {
+	margin: 10px 0;
+}
+
+.preferencias > div > label {
+	margin-left: 20px;
+}
+
+input[type='radio'] {
+	margin-right: 30px;
