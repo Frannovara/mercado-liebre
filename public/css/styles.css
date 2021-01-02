@@ -34,17 +34,22 @@ i {
 }
 
 .mercado-liebre-logo{
-    width: 50%;
+	width: 50%;
+	margin: 15px;
 }
 
 .header-div-busqueda{
 	position : relative;
+	width: 30%
 }
 
 .barra-busqueda{
-	width: 50%;
-	display: block;
 	width: 100%;
+	display: block;
+	padding: 8px;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
 }
 
 .navegacion-header{
@@ -84,7 +89,9 @@ i {
 	top: 0;
 	font-size: 15px;
 	opacity: 0.8;
-	margin: 1px;	
+	margin: 1px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .descripcion-header{
@@ -311,8 +318,111 @@ input[type='radio'] {
 		justify-content: space-around;
 		align-items: center;
 	}
+	.header-div-busqueda {
+		width: 30%;
+	}
+	.barra-busqueda {
+		padding: 8px;
+		border-radius: 5px;
+		border: 0;
+		outline: 0;
+	}
+	.icono-busqueda {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.mercado-liebre-logo {
+		width: 25%;
+	}
+	.descripcion-header {
+		flex-basis: auto;
+		font-size: 14px;
+	}
+	.navegacion-header {
+		display: flex;
+		width: 100%;
+		padding: 1rem;
+		font-size: 14px;
+		justify-content: space-between;
+	}
+	.div-navegacion-header , .div2-navegacion-header{
+		display: flex;
+	}
+	.div-navegacion-header > li ,.div2-navegacion-header > li{
+		padding:  0 10px;
+	}
+
+	.div-navegacion-header > li > a , .div2-navegacion-header > li > a {
+		color: black;
+	}
+	.boton-menu {
+		display: none;
+	}
+
+	/* Main */
+
+	.ultima-visita,
+	.ofertas {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.title-visita {
+		text-align: start;
+	}
+	.producto-main {
+		flex-basis: 40%;
+	}
 }
 
 @media (min-width: 960px){
-	
+	.ultima-visita,
+	.ofertas {
+		 
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		height: 470px;
+		align-items: flex-start;
+	}
+	.producto-main {
+		flex-basis: 20%;
+	}
+
+	.producto-main:hover {
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+
+	.descripcion-producto {
+		display: none;
+	}
+
+	.producto-main:hover .descripcion-producto {
+		display: initial;
+	}
+
+	.icono-truck {
+		transition: 0.3s linear;
+		transform-origin: -50%;
+	}
+	.producto-main:hover .icono-truck {
+		transform: rotate(-30deg);
+	}
+
+	/* Footer */
+
+	.footer {
+		margin-top: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.articulos-footer {
+		flex-basis: 30%;
+		padding: 1rem;
+	}
+	.footer-copyright {
+		width: 100%;
+	}
 }
