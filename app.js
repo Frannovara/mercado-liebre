@@ -5,6 +5,10 @@ app.get('/', function (req, res){
     res.sendFile(__dirname + '/views/index.html')
 })
 
+app.get('/newsletter', (req,res)=>{   
+    res.sendFile( __dirname + '/views/newsletter.html')
+})
+
 app.get('/contacto', function (req, res){
     res.sendFile(__dirname + '/views/contacto.html')
 })
