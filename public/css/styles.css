@@ -27,10 +27,10 @@ i {
 
 .header{
     background-color: #EAC926;
-    justify-content: space-around;
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .mercado-liebre-logo{
@@ -42,15 +42,17 @@ i {
 }
 
 .barra-busqueda{
-    width: 50%;
+	width: 50%;
+	display: block;
+	width: 100%;
 }
 
-.barra-navegacion{
-    display: none;
+.navegacion-header{
+	display: none;
 }
 
 .boton-menu{
-    text-align: center;
+	text-align: center;
 }
 
 .header-menu{
@@ -76,16 +78,18 @@ i {
 }
 
 .icono-busqueda{
-	color: #353232;
-	font-size: 15px;
+	color: #555454;
 	position: absolute;
-	right: 146px;
-	top: 22px;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+	opacity: 0.8;
+	margin: 1px;	
 }
 
 .descripcion-header{
 	flex-basis: 100%;
-	text-align: left;
+	text-align: center;
 }
 
 
@@ -298,4 +302,17 @@ h4 {
 
 input[type='radio'] {
 	margin-right: 30px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px){
+	.header {
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+@media (min-width: 960px){
+	
 }
